@@ -20,5 +20,19 @@ namespace XUnitTestProject1
             //assert
             Assert.Equal(expected, result);
         }
+        public void Test2()
+        {
+            //Arrange
+            int a = 20;
+            int b = 10;
+            int expected = 10;
+
+            //Act
+            Calculator calc = new Calculator();
+            int result = calc.sub(a, b);
+
+            //Assert
+            Assert.Equal(expected, result);
+        }
     }
 }
