@@ -34,5 +34,19 @@ namespace XUnitTestProject1
             //Assert
             Assert.Equal(expected, result);
         }
+        public void Test3()
+        {
+            //Arrange
+            int a = 10;
+            int b = 10;
+            int expected = 100;
+
+            //Act
+            Calculator calc = new Calculator();
+            int result = calc.multi(a, b);
+
+            //Assert
+            Assert.Equal(expected, result);
+        }
     }
 }
